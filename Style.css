@@ -207,4 +207,20 @@ footer{
     align-items:center;
   }
 }
+/* WHATSAPP BUTTON */
+.whatsapp{
+  position:fixed;
+  bottom:18px;
+  right:18px;
+  background:#25D366;
+  color:white;
+  padding:15px 16px;
+  border-radius:50%;
+  font-size:22px;
+  text-decoration:none;
+}
+.fa-solid {
+  font-size: 30px;
+}
+
 
