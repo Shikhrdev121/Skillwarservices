@@ -20,6 +20,7 @@ header{
   z-index:1000;
 }
 
+
 .logo{
   font-size:22px;
   font-weight:bold;
@@ -99,6 +100,10 @@ nav a:hover{
   width:300px;
   padding:22px;
   box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 22px rgba(0,0,0,0.16);
 }
 
 /* ABOUT */
@@ -222,5 +227,6 @@ footer{
 .fa-solid {
   font-size: 30px;
 }
+
 
 
