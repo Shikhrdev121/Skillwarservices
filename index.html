@@ -160,9 +160,30 @@ function toggleMenu(){
 }
 </script>
   <script src="script.js></script>
+    <script>
+  
+  const bar = document.getElementById("progress-fill");
+  let progress = 0;
+
+  const fakeLoad = setInterval(() => {
+    progress += Math.random() * 12;
+    if (progress >= 100) {
+      progress = 100;
+      clearInterval(fakeLoad);
+      setTimeout(() => {
+        document.getElementById("loader").classList.add("hide");
+      }, 500);
+    }
+    bar.style.width = progress + "%";
+  }, 200);
+
+;
+</script>
+
 
 </body>
 </html>
+
 
 
 
