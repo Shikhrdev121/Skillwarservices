@@ -1,5 +1,13 @@
+function toggleMenu(){
+  var menu = document.getElementById("navMenu");
+  if(menu.style.display === "block"){
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
 document.getElementById("contactForm").addEventListener("submit", function(e){
   e.preventDefault();
   alert("Thank you! We will contact you soon.");
   this.reset();
 });
+
