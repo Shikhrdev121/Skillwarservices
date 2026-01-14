@@ -13,57 +13,42 @@ body {
 }
 
 /* ===== HEADER ===== */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 35px;
-  background: white;
-  border-bottom: 1px solid #e5e5e5;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:white;
+  border-bottom:1px solid #e5e5e5;
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
 
-/* LOGO AREA */
-.logo-area {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.shield {
-  width: 28px;
-  height: 34px;
-  background: #1F4FD8;
-  clip-path: polygon(
-    50% 0%,
-    100% 15%,
-    100% 60%,
-    50% 100%,
-    0% 60%,
-    0% 15%
-  );
-}
-
-.logo-area span {
-  font-size: 20px;
-  font-weight: 600;
-  color: #1F4FD8;
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#1F4FD8;
 }
 
 /* NAV */
-nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
+nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#333;
+  font-size:16px;
 }
 
-nav a:hover {
-  color: #1F4FD8;
+nav a:hover{
+  color:#1F4FD8;
 }
 
+/* MOBILE MENU */
+.menu-btn{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
 /* CTA */
 .cta {
   background: #1F4FD8;
@@ -72,9 +57,9 @@ nav a:hover {
   border-radius: 6px;
 }
 
-.cta:hover {
+/* .cta:hover {
   background: #4DA3FF;
-}
+} */
 
 /* MOBILE MENU */
 .menu-btn {
@@ -387,3 +372,4 @@ footer {
 }
 
 }
+
