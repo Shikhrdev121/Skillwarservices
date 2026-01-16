@@ -89,15 +89,18 @@
     <h2>Contact Us</h2>
     <p>Tell us how we can help your business</p>
     <form action="https://formsubmit.co/shikharsrivastav9170@gmail.com" method="POST">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <select required>
-        <option value="">Select Service</option>
-        <option>IT Project Services</option>
-        <option>B2B Support</option>
-        <option>Recruitment & Manpower</option>
-      </select>
-      <textarea name="message" placeholder="Your Message"></textarea>
+      <input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+
+<select name="service" required>
+  <option value="">Select Service</option>
+  <option value="IT Project Services">IT Project Services</option>
+  <option value="B2B Support">B2B Support</option>
+  <option value="Recruitment & Manpower">Recruitment & Manpower</option>
+</select>
+
+<textarea name="message" placeholder="Your Message"></textarea>
+
       <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
@@ -157,6 +160,7 @@ window.addEventListener("load", () => {
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
