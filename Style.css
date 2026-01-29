@@ -109,84 +109,87 @@ nav a:hover{
   background: #f2f4f8;
   text-align: center;
 }
-/* Counter Section */
-.counter-section {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 30px;
-}
+    /* Section Header */
+    .section-header{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-header span{
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 20px;
+      background: linear-gradient(135deg,#2563eb,#9333ea);
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    .section-header h1{
+      font-size: 38px;
+      margin: 16px 0 10px;
+      color: #111;
+    }
+    .section-header p{
+      max-width: 720px;
+      margin: 0 auto;
+      color: #555;
+      font-size: 16px;
+    }
 
-/* Counter Box */
-.counter-box {
-  text-align: center;
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  flex: 1 1 200px;
-  min-width: 180px;
-}
+    /* Counter Section */
+    .counter-section{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .counter-box{
+      text-align: center;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      flex: 1 1 200px;
+      min-width: 180px;
+      transition: transform 0.3s;
+    }
+    .counter-box:hover{
+      transform: translateY(-5px);
+    }
+    .counter{
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(90deg,#2563eb,#9333ea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeUp 1s ease-out;
+    }
+    .label{
+      font-size: 16px;
+      color: #555;
+      margin-top: 10px;
+    }
 
-/* Counter */
-.counter {
-  font-size: 36px;
-  font-weight: 700;
-  background: linear-gradient(90deg,#2563eb,#9333ea);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+    /* Fade Up Animation */
+    @keyframes fadeUp{
+      0%{opacity:0; transform: translateY(20px);}
+      100%{opacity:1; transform: translateY(0);}
+    }
 
-/* Label */
-.label {
-  font-size: 16px;
-  color: #555;
-  margin-top: 10px;
-}
+    /* Responsive */
+    @media(max-width:768px){
+      .counter-section{flex-direction: column; align-items: center;}
+      .counter{font-size:32px;}
+      .section-header h1{font-size:32px;}
+      .section-header p{font-size:15px; padding:0 10px;}
+    }
+    @media(max-width:480px){
+      .counter{font-size:28px;}
+      .section-header h1{font-size:28px;}
+      .section-header span{font-size:12px; padding:4px 12px;}
+      .counter-box{padding: 20px; min-width:150px;}
+      .label{font-size:14px;}
+    }
 
-/* Section Header */
-.section-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.section-header span {
-  display: inline-block;
-  padding: 6px 16px;
-  border-radius: 20px;
-  background: linear-gradient(135deg,#2563eb,#9333ea);
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-.section-header h1 {
-  font-size: 38px;
-  margin: 16px 0 10px;
-  color: #111;
-}
-.section-header p {
-  max-width: 720px;
-  margin: 0 auto;
-  color: #555;
-  font-size: 16px;
-}
-
-/* Responsive */
-@media(max-width:1024px){
-  .counter-section {gap: 20px;}
-}
-@media(max-width:768px){
-  .counter-section {flex-direction: column; align-items: center;}
-  .counter {font-size: 32px;}
-  .section-header h1 {font-size: 32px;}
-  .section-header p {font-size: 15px; padding: 0 10px;}
-}
-@media(max-width:480px){
-  .counter {font-size: 28px;}
-  .section-header h1 {font-size: 28px;}
-  .section-header span {font-size: 12px; padding:4px 12px;}
-  .counter-box {padding: 20px; min-width: 150px;}
-  .label {font-size: 14px;}
-}
 
 .cards {
   display: flex;
@@ -484,6 +487,7 @@ footer {
     align-items:center;
   }
 }
+
 
 
 
